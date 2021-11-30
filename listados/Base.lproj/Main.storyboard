@@ -20,14 +20,38 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaID" id="4x1-gG-hRf">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaID" id="4x1-gG-hRf" customClass="NotaTableViewCell" customModule="listados" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4x1-gG-hRf" id="Qvz-Qx-o24">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgg-s6-xag">
+                                                    <rect key="frame" x="30" y="21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="TY1-lb-uD3">
+                                                    <rect key="frame" x="80" y="10" width="326" height="44"/>
+                                                </slider>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Sgg-s6-xag" firstAttribute="leading" secondItem="Qvz-Qx-o24" secondAttribute="leadingMargin" constant="10" id="M1H-nw-ZBw"/>
+                                                <constraint firstItem="Sgg-s6-xag" firstAttribute="top" secondItem="Qvz-Qx-o24" secondAttribute="topMargin" constant="10" id="R7e-CI-gNQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Sgg-s6-xag" secondAttribute="bottom" constant="10" id="T4m-Xp-pr5"/>
+                                                <constraint firstAttribute="trailing" secondItem="TY1-lb-uD3" secondAttribute="trailing" constant="10" id="jaD-dk-Agi"/>
+                                                <constraint firstItem="TY1-lb-uD3" firstAttribute="top" secondItem="Qvz-Qx-o24" secondAttribute="top" constant="10" id="lUA-Gj-DxF"/>
+                                                <constraint firstItem="TY1-lb-uD3" firstAttribute="leading" secondItem="Sgg-s6-xag" secondAttribute="trailing" constant="10" id="nOk-it-rqR"/>
+                                                <constraint firstAttribute="bottom" secondItem="TY1-lb-uD3" secondAttribute="bottom" constant="10" id="p25-HO-dcV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="notaSlider" destination="TY1-lb-uD3" id="6t7-8i-EWC"/>
+                                            <outlet property="numeroTXT" destination="Sgg-s6-xag" id="mKa-1N-4lU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

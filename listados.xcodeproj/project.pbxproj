@@ -13,6 +13,7 @@
 		0DD8A84D275637D80082D2D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD8A84B275637D80082D2D2 /* Main.storyboard */; };
 		0DD8A84F275637D90082D2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD8A84E275637D90082D2D2 /* Assets.xcassets */; };
 		0DD8A852275637D90082D2D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD8A850275637D90082D2D2 /* LaunchScreen.storyboard */; };
+		0DD8A85A275641B90082D2D2 /* NotaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD8A859275641B90082D2D2 /* NotaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0DD8A84E275637D90082D2D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DD8A851275637D90082D2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DD8A853275637D90082D2D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD8A859275641B90082D2D2 /* NotaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0DD8A84E275637D90082D2D2 /* Assets.xcassets */,
 				0DD8A850275637D90082D2D2 /* LaunchScreen.storyboard */,
 				0DD8A853275637D90082D2D2 /* Info.plist */,
+				0DD8A859275641B90082D2D2 /* NotaTableViewCell.swift */,
 			);
 			path = listados;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				0DD8A84A275637D80082D2D2 /* ViewController.swift in Sources */,
 				0DD8A846275637D80082D2D2 /* AppDelegate.swift in Sources */,
 				0DD8A848275637D80082D2D2 /* SceneDelegate.swift in Sources */,
+				0DD8A85A275641B90082D2D2 /* NotaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
